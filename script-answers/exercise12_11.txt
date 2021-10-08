@@ -1,0 +1,5 @@
+docker exec -it redis bash
+redis-cli
+KEYS *
+SET counter 9001
+DEL counter

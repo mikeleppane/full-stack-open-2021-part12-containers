@@ -1,0 +1,3 @@
+docker start -i b9c9
+apt update && apt -y install nano
+nano /usr/src/app/index.js
