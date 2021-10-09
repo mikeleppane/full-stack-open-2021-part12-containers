@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend-dev:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+    ports:
+      - "8000:80"
+    container_name: todo-frontend-dev
